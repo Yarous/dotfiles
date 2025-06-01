@@ -1,0 +1,83 @@
+{
+  "position": "top",
+    "margin-top" : 2,
+    "margin-left": 20,
+    "margin-right": 20,
+    "height" : 50,
+    "modules-left": [
+      "hyprland/workspaces",
+    ],
+    "modules-center": [
+      "temperature",
+      "memory",
+      "cpu"
+    ],
+    "modules-right": [
+      "hyprland/language",
+      "pulseaudio",
+      "tray",
+      "clock",
+    ],
+    "hyprland/workspaces": {
+      "sort-by-number": true,
+      "persistent-workspaces": {
+        "*": 10
+      },
+      "format": "{icon}",
+      "format-icons": {
+        "1": "<span color='#f9de8f'>1</span>",
+        "2": "<span color='#ff9b93'>2</span>",
+        "3": "<span color='#95e1d3'>3</span>",
+        "4": "<span color='#81A1C1'>4</span>",
+        "5": "<span color='#A3BE8C'>5</span>",
+        "6": "<span color='#F9DE8F'>6</span>",
+        "7": "<span color='#ff9b93'>7</span>",
+        "8": "<span color='#95e1d3'>8</span>",
+        "9": "<span color='#81A1C1'>9</span>",
+        "10": "<span color='#A3BE8C'>10</span>",
+      }
+    },
+    "memory": {
+      "format": "<span color='#d19a66'>{used:0.1f}GiB  </span>",
+      "tooltip": false,
+      "interval": 3,
+    },
+    "cpu": {
+      "format": "<span color='#989cff'>{usage}% 󰍛 </span>",
+      "tooltip": false,
+      "interval": 3,
+    },
+    "temperature": {
+      "thermal-zone": 1,
+      "format": "<span color='#a4ebf3'>{temperatureC}°C  </span>",
+      "interval": 3,
+      "tooltip": false,
+    },
+    "clock": {
+      "format": "<span color='#888e96'>󰥔 {:%H:%M}</span>",
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+      "format-alt": "<span color='#61afef'>󰃭 {:%Y-%m-%d}</span>"
+    },
+    "hyprland/language": {
+      "format": "{short}"
+    },
+    "pulseaudio": {
+      "format": "{icon}  {volume}%",
+      "format-bluetooth": "{volume}% {icon} {format_source}",
+      "format-bluetooth-muted": " {icon} {format_source}",
+      "format-muted": " {format_source}",
+      "format-icons": {
+        "headphone": "",
+        "hands-free": "",
+        "headset": "",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": ["", "", ""]
+      },
+      "on-click": "pavucontrol",
+    },
+    "tray": {
+      "spacing": 10
+    },
+}
