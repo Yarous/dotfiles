@@ -16,7 +16,7 @@ Here’s the lineup of tools that make this setup shine:
 ---
 ## Screenshots 📸
 <img title="Screenshot 1" src="/assets/screen_1.jpg">
-<img titile="Screenshot 2" src="/assets/screen_2.jpg">
+<img title="Screenshot 2" src="/assets/screen_2.jpg">
 ---
 ## Customization 🎨
 This config is built to be tweaked. Dive into the `~/.config` folders for each tool to make it your own. Here’s a quick rundown:
