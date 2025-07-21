@@ -1,6 +1,8 @@
 if status is-interactive
     zoxide init fish | source
     alias cls='clear'
+    alias cd='z'
+    alias get='doas pacman -S'
     alias ls='eza --icons --git'
     function yt-dw -d "Download best quality audio from YouTube as MP3"
         if test (count $argv) -eq 0
