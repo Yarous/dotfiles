@@ -1,46 +1,37 @@
 window {
-  background-color: #1e1e2e;
+  background-color: #000000;
+  border-radius: 15px;
 }
 
 * {
-  font-family: "Jetbrains Mono";
-  color: #fff;
-}
-
-#scroll {
-  padding: 0.5rem;
+  font-family: "JetBrains Mono";
+  color: #ffffff;
 }
 
 #input {
-  background-color: #1e1e2e;
-  color: #ffffff;
-  outline: none;
-  box-shadow: none;
-  border: 0;
-  border-radius: 0;
-  font-size: 1rem;
+  background-color: #101010;
+  border-radius: 15px;
   padding: 0.5rem;
+  margin-bottom: 2rem;
 }
 
-#inner-box {
-  margin: 0.5rem;
+#outer-box {
   font-size: 1rem;
+  padding: 2rem;
 }
 
-#img {
-  margin: 10px 10px;
-}
-
-#entry {
-  border-radius: 0.5rem;
+.entry {
+  background-color: #101010;
+  border-radius: 15px;
+  padding: 1rem;
 }
 
 #entry:selected {
   background-color: #b5beff;
-  outline: none;
+  border-radius: 15px;
 }
 
-#text:selected {
-  color: #1a1b26;
+#text {
+  margin-left: 0.5rem;
 }
 
